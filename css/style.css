@@ -1,0 +1,335 @@
+:root {
+  --brand-cl: #4d5ae5;
+  --body-cl: #2e2f42;
+  --white-cl: #fff;
+  --Light-cl: #f4f4fd;
+  --text-cl: #434455;
+  --hover-cl: #404bbf;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--white-cl);
+  color: var(--text-cl);
+}
+.link {
+  text-decoration: none;
+}
+.list {
+  list-style-type: none;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul,
+ol {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.container {
+  width: 100%;
+  max-width: 1128px;
+  margin: 0 auto;
+}
+/* -------------Header----------------- */
+
+.header {
+  padding: 24px 0;
+}
+.header-navigation {
+  display: flex;
+}
+.header-list {
+  margin-left: 76px;
+  display: flex;
+  gap: 40px;
+}
+.header-address-list {
+  display: flex;
+  gap: 40px;
+}
+.header-flex {
+  display: flex;
+}
+.logo {
+  color: var(--brand-cl);
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.header-studio {
+  color: var(--body-cl);
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.header-address {
+  font-style: normal;
+  margin-left: auto;
+}
+.header-address-link {
+  color: var(--text-cl);
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.header-address-link:hover,
+.header-address-link:focus {
+  color: var(--hover-cl);
+}
+.header-item-link,
+.header-navigation-link {
+  color: var(--body-cl);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.header-item-link:hover,
+.header-item-link:focus,
+.header-address-link:hover,
+.header-address-link:focus {
+  text-decoration: underline;
+  text-decoration-color: var(--hover-cl);
+  color: var(--hover-cl);
+}
+
+/* ////////////////////Hero//////////////////// */
+
+.hero-button {
+  background-color: var(--Light-cl);
+  color: var(--brand-cl);
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--hover-cl);
+  color: var(--white-cl);
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
+.hero-list-card-title {
+  color: var(--body-cl);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+.hero-list-card-text {
+  color: var(--text-cl);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.header-navigation-link:hover,
+.header-navigation-link:focus {
+  text-decoration: underline;
+  text-decoration-color: var(--hover-cl);
+  color: var(--hover-cl);
+}
+
+/* -------------Hero-hello----------------- */
+
+.hero-hello {
+  background-color: var(--body-cl);
+  padding: 188px 0;
+  margin: 0 auto;
+}
+.hero-hello-title {
+  display: block;
+  color: var(--white-cl);
+  text-align: center;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  width: 496px;
+  margin: 0 auto;
+  margin-bottom: 48px;
+}
+.hero-hello-btn {
+  display: block;
+  background: var(--brand-cl);
+  color: var(--white-cl);
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  margin: 0 auto;
+  padding: 16px 32px;
+}
+.hero-hello-btn:hover,
+.hero-hello-btn:focus {
+  background: var(--hover-cl);
+}
+
+/* -------------Strengths----------------- */
+
+.strengths {
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+.stengths-title {
+  color: var(--body-cl);
+}
+.strengths-list {
+  display: flex;
+  gap: 24px;
+}
+.strengths-item {
+  width: calc((100% - 3 * 24px) / 4);
+  min-width: 264px;
+}
+.strengths-item-title {
+  color: var(--body-cl);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+.strengths-item-text {
+  color: var(--text-cl);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+/* -------------Products----------------- */
+
+.products{
+  margin-bottom: 120px;
+}
+.products-title {
+  color: var(--body-cl);
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  margin-bottom: 72px;
+}
+.products-list {
+  display: flex;
+  gap: 24px;
+}
+.products-item {
+  width: calc((100% - 2 * 24px) / 3);
+  min-width: 360px;
+}
+/* -------------Team----------------- */
+
+.team {
+  background-color: var(--Light-cl);
+  padding: 120px 0;
+  margin: 0 auto;
+}
+.team-title {
+  color: var(--body-cl);
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  margin-bottom: 72px;
+}
+.team-list{
+  display: flex;
+  gap: 24px;
+}
+.team-item {
+  background-color: var(--white-cl);
+  padding-bottom: 32px;
+  width:calc((100% - 3*24) / 4);
+  max-width: 264px;
+}
+.team-images{
+  margin-bottom: 32px;
+}
+.team-item-title {
+  color: var(--body-cl);
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+.team-item-text {
+  color: var(--text-cl);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+/* -------------Footer----------------- */
+
+
+.footer {
+  background: var(--body-cl);
+  display: block;
+}
+.footer-container{
+  padding-top: 100px;
+  padding-bottom: 100px;
+  width: 100%;
+  max-width: 1128px;
+  margin: 0 auto;
+}
+.footer-studio {
+  color: var(--Light-cl);
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.footer-text {
+  margin-top: 18px;
+  display: block;
+  color: var(--Light-cl);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  width: 264px;
+}
