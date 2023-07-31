@@ -38,19 +38,24 @@ ol {
   width: 100%;
   max-width: 1128px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 /* -------------Header----------------- */
 
 .header {
-  padding: 24px 0;
+  border-bottom: 1px solid var(--border-btn-cl);
 }
 .header-navigation {
   display: flex;
+  align-items: center;
 }
 .header-list {
-  margin-left: 76px;
   display: flex;
   gap: 40px;
+}
+.header-item,
+.header-address-item {
+  padding: 24px 0;
 }
 .header-address-list {
   display: flex;
@@ -67,6 +72,7 @@ ol {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-right: 76px;
 }
 .header-studio {
   color: var(--body-cl);
@@ -120,6 +126,11 @@ ol {
 
 /* ////////////////////Hero//////////////////// */
 
+
+.hero {
+  padding-top: 96px;
+  padding-bottom: 120px; 
+}
 .hero-button {
   background-color: var(--Light-cl);
   color: var(--brand-cl);
@@ -148,6 +159,7 @@ ol {
   line-height: 1.5;
   letter-spacing: 0.04em;
   cursor: pointer;
+  border: 1px solid transparent;
   border-radius: 4px;
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
     0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
@@ -156,7 +168,7 @@ ol {
   display: flex;
   justify-content: center;
   margin-top: 96px;
-  margin-bottom: 50px;
+  margin-bottom: 72px;
   gap: 24px;
 }
 .hero-list-card {
@@ -166,10 +178,10 @@ ol {
 }
 .hero-list-card-images {
   display: block;
-  margin-bottom: 32px;
 }
 .card-title-text {
-  padding: 0 16px;
+  padding: 32px 16px;
+  border: 1px solid var(--border-btn-cl);
 }
 .hero-list-item {
   width: calc((100% - 2 * 24) / 3);
@@ -212,6 +224,7 @@ ol {
   width: 496px;
   margin: 0 auto;
   margin-bottom: 48px;
+  max-width: 496px;
 }
 .hero-hello-btn {
   display: block;
@@ -225,6 +238,9 @@ ol {
   cursor: pointer;
   margin: 0 auto;
   padding: 16px 32px;
+  min-width: 169px;
+  height: 56px;
+  border-radius: 4px;
 }
 .hero-hello-btn:hover,
 .hero-hello-btn:focus {
@@ -233,9 +249,21 @@ ol {
 
 /* -------------Strengths----------------- */
 
+.visually-hiddenvisually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 .strengths {
-  margin-top: 120px;
-  margin-bottom: 120px;
+  padding: 120px 0;
 }
 .stengths-title {
   color: var(--body-cl);
@@ -263,11 +291,14 @@ ol {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+.products-images {
+  display: block;
+}
 
 /* -------------Products----------------- */
 
 .products {
-  margin-bottom: 120px;
+  padding-bottom: 120px;
 }
 .products-title {
   color: var(--body-cl);
@@ -313,9 +344,13 @@ ol {
   padding-bottom: 32px;
   width: calc((100% - 3 * 24) / 4);
   max-width: 264px;
+  border-radius: 0px 0px 4px 4px;
 }
 .team-images {
-  margin-bottom: 32px;
+  display: block;
+}
+.team-title-text {
+  padding: 32px 0;
 }
 .team-item-title {
   color: var(--body-cl);
@@ -340,13 +375,11 @@ ol {
 .footer {
   background: var(--body-cl);
   display: block;
+  padding: 100px 0;
 }
-.footer-container {
-  padding-top: 100px;
-  padding-bottom: 100px;
-  width: 100%;
-  max-width: 1128px;
-  margin: 0 auto;
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 16px;
 }
 .footer-studio {
   color: var(--Light-cl);
@@ -358,12 +391,11 @@ ol {
   text-transform: uppercase;
 }
 .footer-text {
-  margin-top: 18px;
   display: block;
   color: var(--Light-cl);
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  width: 264px;
+  max-width: 264px;
 }
